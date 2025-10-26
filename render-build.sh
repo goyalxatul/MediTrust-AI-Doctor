@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# Install system dependencies
+set -o errexit  # Exit on first error
 apt-get update && apt-get install -y portaudio19-dev
-# Install Python packages
 pip install -r requirements.txt
